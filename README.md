@@ -3,14 +3,12 @@ Raspberry Pi4とSIM7600で指定されたtelegramアカウントにSMSを転送�
 
 ## 仕組み
 * SIM7600が受信したらPiにインストールされた[Gammu](https://wammu.eu/gammu/) が受信したSMS内容をファイルに保存する。
-* ファイルの保存があった時、[TelegramのBot](https://core.telegram.org/bots) が内容を指定されたアカウントに転送する。
-<br>  
+* ファイルの保存があった時、[TelegramのBot](https://core.telegram.org/bots) が内容を指定されたアカウントに転送する。  
 
 ## 使用方法
 * line 7 ```botToken```でのBotのIDとTokenを入力
 * line 8 ```forwardID```で転送先アカウントのIDを入力
 * line 42 ```wm.add_watch```でモニターするファイル保存のdirectoryを指定できる
-<br>
 
 ### 準備事項
 * Piにgammu-smsdをインストールする
